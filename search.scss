@@ -1,0 +1,24 @@
+$primary-color: #041c2c;
+$secondary-color: #2f87b9;
+
+.search{
+    background-color: transparent;
+    border: 2px solid $secondary-color;
+    padding:0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    color:#fff;
+    font-family: inherit;
+    margin: 1rem 8rem;
+    display: block;
+    float: right;
+}
+
+.search:focus{
+    outline:0;
+    background-color: $secondary-color;
+}
+
+.search::placeholder{
+    color: white;
+}
