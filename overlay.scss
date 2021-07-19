@@ -1,0 +1,186 @@
+$primary-color: #041c2c;
+$secondary-color: #2f87b9;
+
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white,  50%)) {
+  &::-webkit-scrollbar {
+    width:  $size;
+    height: $size;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $foreground-color;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $background-color;
+  }
+}
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    background-color: rgba(4, 28, 44, 0.85); 
+    overflow-x: hidden; 
+    transition: 0.5s; 
+    a {
+      padding: 8px;
+      text-decoration: none;
+      font-size: 36px;
+      color: #818181;
+      display: block; 
+      transition: 0.3s; 
+    }
+    .closebtn {
+      position: absolute;
+      top: 20px;
+      right: 45px;
+      font-size: 60px;
+    }
+  }
+  
+.overlay-content {
+  position: relative;
+  top: 10%; 
+  width: 100%; 
+  text-align: center; 
+  margin-top: 30px; 
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+  
+.embed.hide{
+  display: none;
+}
+
+.embed.show{
+  display: inline-block;
+}
+
+.arrow{
+  position: absolute;
+  font-size: 40px;
+}
+
+.arrow.left-arrow{
+  top:50%;
+  left:5%;
+  transform: translateY(-50%);
+}
+
+.arrow.right-arrow{
+  top:50%;
+  transform: translateY(-50%);
+  right:5%;
+}
+
+
+
+
+
+.overlay2 {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  background-color: rgba(4, 28, 44, 0.95); 
+  overflow-x: hidden; 
+  transition: 0.5s; 
+
+  .closebtn2 {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    text-decoration: none;
+    color: #818181;
+    transition: 0.3s;
+  }
+}
+
+.overlay2 a:hover, .overlay2 a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the content inside the overlay */
+.overlay-content2 {
+  top: 5%; 
+  width: 100%; 
+  text-align: left; 
+  margin-top: 4rem; 
+  color: #f1f1f1;
+  font-family: inherit;
+  @include scrollbars(6px, $secondary-color ,rgba(4, 28, 44, 0.8)  );
+
+
+
+  .poster {
+    width: 350px;
+    border-radius: 3px;
+    margin-left: 2rem;
+    margin-right: 1rem;
+    float: left;
+
+    img{
+      width:100%;
+    }
+  }
+  .title{
+    font-family: inherit;
+    font-size: 3rem;
+    position: sticky;
+  }
+  .date{
+    font-size: 1.3rem;
+    text-align: right;
+    margin-right: 15rem;
+    font-weight: bold;
+
+  }
+  .lang{
+    font-size: 1rem;
+    
+  }
+  span{
+    background-color: grey;
+    padding: 0.6rem;
+    font-size: 1rem;
+    border-radius: 3px;
+    font-weight: bold;
+    margin-top: 3.4rem;
+  }
+
+  span.green{
+      color:lightgreen;
+  }
+
+  span.orange{
+      color:orange;
+  }
+
+  span.red{
+      color:red;
+  }
+  .desc{
+    padding: 1rem;
+    max-height: 100%;
+    text-align: justify;
+    margin-right: 12rem;
+    font-size: 1.3rem;
+  }
+  .rated{
+    font-family: inherit;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+  }
+}
+
+
+
