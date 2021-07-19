@@ -1,0 +1,53 @@
+$primary-color: #041c2c;
+$secondary-color: #2f87b9;
+.btn {
+    background-color: transparent;
+    border: 2px solid $secondary-color;
+    padding:0.5rem 5rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    color: white;
+    font-family: inherit;
+    margin-bottom: 0.5rem;
+  }
+  
+  .btn:focus , .btn:hover{
+    outline:0;
+    background-color: $secondary-color;
+    color: $primary-color;
+  }
+  
+#sort {
+    display: inline-block;
+    margin: 1rem 8rem;
+    
+}
+.sort {
+    
+    display: none;
+    text-align: left;
+    text-decoration: none;
+
+    position: relative;
+    background-color: transparent;
+    border: 2px solid orange;
+    padding:0.5rem 3rem;
+    max-width: 3000px;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    font-family: inherit;
+    margin-bottom: 0.5rem;
+
+}
+
+#sort:hover .sort {
+    display: block ;
+}
+.sort:hover{
+    background-color: $primary-color;
+    color: $secondary-color;
+    border: solid $secondary-color;
+
+}
+  
