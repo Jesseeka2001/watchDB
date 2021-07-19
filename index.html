@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Using TheMovieDB</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="main_scss/style.css">
+
+</head>
+<body>
+    <header>
+        <div id="genr">
+            <button onclick="myFunction()"   class="genre">   Genre </button>
+            <div id="tags"></div>
+        </div>
+    </header>
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content" id="overlay-content"></div>
+        <a href="javascript:void(0)" class="arrow left-arrow" id="left-arrow">&#8656;</a> 
+        <a href="javascript:void(0)" class="arrow right-arrow" id="right-arrow" >&#8658;</a>
+    </div>
+    
+    <div id="myNav2" class="overlay2">
+        <a href="javascript:void(0)" class="closebtn2" onclick="closeNav2()">&times;</a>
+        <div class="overlay-content2" id="overlay-content2"></div>
+        
+    </div>        
+
+    <form  id="form" >
+        <input type="text" placeholder="Search" id="search" class="search">
+    </form>
+
+    <div id="sort">
+      <button onclick="myFunction()"        class="btn">    Sort by:        </button>
+        <button onclick="rating()"          class="sort">   Best Rated          </button>
+        <button onclick="release_dates()"   class="sort">   Latest Release Dates </button>
+        <button onclick="popularity()"      class="sort" >  Popularity          </button>
+    </div> 
+     
+    <main id="main"></main>
+    <script src="variables.js"></script>
+    <script src="app.js"></script>
+    <script src="overlay.js"></script>
+
+    
+
+</body>
+</html>
