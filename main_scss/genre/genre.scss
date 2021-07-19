@@ -1,0 +1,46 @@
+$primary-color: #041c2c;
+$secondary-color: #2f87b9;
+
+#tags{
+    width: 90%;
+    display:inline-block;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
+
+.tag{
+    color:white;
+    padding:10px 20px;
+    background-color: orange;
+    border-radius: 50px;
+    margin:5px;
+    display:inline-block;
+    cursor: pointer;
+}
+
+.tag.highlight{
+    background-color: $primary-color;
+}
+#genr{
+    width:90%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
+.genre{
+    color:white;
+    padding:10px 20px;
+    background-color: orange;
+    border-radius: 50px;
+    margin:5px;
+    display:none;
+    cursor: pointer;
+}
+
+#genr:hover .tag{
+    display: inline-block;
+}
